@@ -1,0 +1,17 @@
+{
+    "status": {
+        "groupId": 3,
+        "groupName": "PENDING",
+        "id": 1,
+        "name": "PENDING_WAITING_DELIVERY",
+        "description": "Message sent, waiting for delivery report"
+    },
+    "error": {
+        "groupId": 1,
+        "groupName": "HANDSET_ERRORS",
+        "id": 27,
+        "name": "EC_ABSENT_SUBSCRIBER",
+        "description": "Absent Subscriber",
+        "permanent": false
+    }
+}

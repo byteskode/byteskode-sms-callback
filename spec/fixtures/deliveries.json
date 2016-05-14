@@ -1,0 +1,17 @@
+{
+    "status": {
+        "groupId": 3,
+        "groupName": "DELIVERED",
+        "id": 5,
+        "name": "DELIVERED_TO_HANDSET",
+        "description": "Message delivered to handset"
+    },
+    "error": {
+        "groupId": 0,
+        "groupName": "OK",
+        "id": 0,
+        "name": "NO_ERROR",
+        "description": "No Error",
+        "permanent": false
+    }
+}
