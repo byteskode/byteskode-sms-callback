@@ -1,6 +1,6 @@
 {
     "name": "byteskode-sms-callback",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "byteskode infobip sms deliveries & track callback",
     "main": "index.js",
     "scripts": {
