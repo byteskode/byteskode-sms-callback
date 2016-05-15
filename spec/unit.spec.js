@@ -74,7 +74,7 @@ describe('byteskode sms callback', function() {
             .post(path)
             .send({})
             .set('Accept', 'application/json')
-            .expect(500)
+            .expect(400)
             .expect('Content-Type', /json/)
             .end(function(error, response) {
                 response = response.body;
@@ -89,7 +89,7 @@ describe('byteskode sms callback', function() {
             .send({})
             .query({ _method: 'PUT' })
             .set('Accept', 'application/json')
-            .expect(500)
+            .expect(400)
             .expect('Content-Type', /json/)
             .end(function(error, response) {
                 response = response.body;
@@ -105,7 +105,7 @@ describe('byteskode sms callback', function() {
             .send({})
             .query({ source: sms._id })
             .set('Accept', 'application/json')
-            .expect(500)
+            .expect(400)
             .expect('Content-Type', /json/)
             .end(function(error, response) {
                 response = response.body;
@@ -120,7 +120,7 @@ describe('byteskode sms callback', function() {
             .send({})
             .query({ source: sms._id, _method: 'PUT' })
             .set('Accept', 'application/json')
-            .expect(500)
+            .expect(400)
             .expect('Content-Type', /json/)
             .end(function(error, response) {
                 response = response.body;

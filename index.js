@@ -96,7 +96,7 @@ function handle(request, done) {
 router.post(deliveriesPath, function(request, response) {
     handle(request, function(error, result) {
         if (error) {
-            response.status(error.status || 500);
+            response.status(error.status || 400);
             response.json({
                 success: false,
                 message: error.message
@@ -118,7 +118,7 @@ router.post(deliveriesPath, function(request, response) {
 router.put(deliveriesPath, function(request, response) {
     handle(request, function(error, result) {
         if (error) {
-            response.status(error.status || 500);
+            response.status(error.status || 400);
             response.json({
                 success: false,
                 message: error.message
