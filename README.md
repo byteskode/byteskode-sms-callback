@@ -2,6 +2,7 @@ byteskode-sms-callback
 =====================
 
 [![Build Status](https://travis-ci.org/byteskode/byteskode-sms-callback.svg?branch=master)](https://travis-ci.org/byteskode/byteskode-sms-callback)
+
 byteskode infobip sms deliveries & track callbackbyteskode infobip sms with mongoose persistence support
 
 *Note: All configuration are done using [config](https://github.com/lorenwest/node-config) using key `sms`*
