@@ -39,6 +39,7 @@ _config = _.merge({}, {
 //deduce sms deliveries & tracking callback url
 var deliveriesPath = _config.callback.deliveries;
 
+
 //obtain SMS and Message model
 var Message = SMS.Message;
 
@@ -60,7 +61,7 @@ function handle(request, done) {
     }
 
 
-    //ensure delivery / tracking report provided
+    //ensure delivery or tracking report provided
     var hasNoDeliveryReport =
         request &&
         _.isEmpty(request.body) &&
