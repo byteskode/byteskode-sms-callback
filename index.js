@@ -9,8 +9,7 @@
 //dependencies
 var _ = require('lodash');
 var config = require('config');
-var mongoose = require('mongoose');
-require('byteskode-sms');
+var SMS = require('byteskode-sms');
 var Utils = require('byteskode-sms/lib/utils');
 var express = require('express');
 var router = express.Router();
@@ -41,7 +40,7 @@ _config = _.merge({}, {
 var deliveriesPath = _config.callback.deliveries;
 
 //obtain SMS and Message model
-var Message = mongoose.model(_config.models.message.name);
+var Message = SMS.Message;
 
 
 /**
