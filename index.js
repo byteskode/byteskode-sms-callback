@@ -6,19 +6,11 @@
  * @singleton
  */
 
-//set environment to development by default
-if (!(process.env || {}).NODE_ENV) {
-    process.env.NODE_ENV = 'development';
-}
-
-//suppress configuration warning
-process.env.SUPPRESS_NO_CONFIG_WARNING = true;
-
 //dependencies
 var _ = require('lodash');
-var config = require('config');
 var SMS = require('byteskode-sms');
 var Utils = require('byteskode-sms/lib/utils');
+var config = require('config');
 var express = require('express');
 var router = express.Router();
 
