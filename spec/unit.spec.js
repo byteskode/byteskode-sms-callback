@@ -31,8 +31,24 @@ describe('byteskode sms callback', function() {
         text: faker.lorem.sentence()
     };
 
-    var path = config.get('sms').callback.deliveries;
-    // var Message = mongoose.model(config.get('sms').models.message.name);
+    var _config = config.has('sms') ? config.get('sms') : {};
+
+    //merge default configurations
+    _config = _.merge({}, {
+        callback: {
+            deliveries: '/sms-deliveries',
+        },
+        models: {
+            sms: {
+                name: 'SMS',
+            },
+            message: {
+                name: 'SMSMessage',
+            }
+        }
+    }, _config);
+
+    var path = _config.callback.deliveries;
     var sms;
     var messages;
 
